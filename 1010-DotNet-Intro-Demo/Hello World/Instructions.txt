@@ -1,0 +1,8 @@
+
+
+1. Open a Visual Studio Command Prompt
+2. Execute the following command
+	csc HelloWorld.txt
+3. Show files (dir)
+4. Run hello.exe
+5. Ildasm hello.exe
