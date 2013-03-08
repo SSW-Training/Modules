@@ -15,5 +15,15 @@ namespace WindowsUI
         {
             InitializeComponent();
         }
+
+        private void titleOfCourtesyLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void titleOfCourtesyTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
