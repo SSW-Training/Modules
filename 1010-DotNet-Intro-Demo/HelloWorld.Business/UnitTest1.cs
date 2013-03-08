@@ -286,7 +286,7 @@ namespace HelloWorld.Business.IntroducingDI
     }
 
     //step 2: create the console application
-
+    //aa
 
     //step 3: introduce tests... 
     public class MessageGeneratorTests
