@@ -20,14 +20,14 @@ namespace WindowsUI
             InitializeComponent();
 
             db = new NorthwindEntities();
-            db.Employees.Load();
+            db.Employees.OrderBy(e=>e.LastName).Load();
             employeeBindingSource.DataSource = db.Employees.Local.ToBindingList();
         }
 
         //note: this worked in Linq to SQL
         //db = new NorthwindEntities();
         //var employeeQuery = from employee in db.Employees
-        //                    orderby employee.FirstName
+        //                    orderby employee.LastName
         //                    select employee;
         //employeeBindingSource.DataSource = employeeQuery;
         
