@@ -76,6 +76,7 @@
             this.reportsToTextBox = new System.Windows.Forms.TextBox();
             this.titleTextBox = new System.Windows.Forms.TextBox();
             this.titleOfCourtesyTextBox = new System.Windows.Forms.TextBox();
+            this.ShowOrderButton = new System.Windows.Forms.Button();
             addressLabel = new System.Windows.Forms.Label();
             birthDateLabel = new System.Windows.Forms.Label();
             cityLabel = new System.Windows.Forms.Label();
@@ -498,11 +499,22 @@
             this.titleOfCourtesyTextBox.Size = new System.Drawing.Size(200, 20);
             this.titleOfCourtesyTextBox.TabIndex = 32;
             // 
+            // ShowOrderButton
+            // 
+            this.ShowOrderButton.Location = new System.Drawing.Point(240, 465);
+            this.ShowOrderButton.Name = "ShowOrderButton";
+            this.ShowOrderButton.Size = new System.Drawing.Size(75, 23);
+            this.ShowOrderButton.TabIndex = 33;
+            this.ShowOrderButton.Text = "Show Order";
+            this.ShowOrderButton.UseVisualStyleBackColor = true;
+            this.ShowOrderButton.Click += new System.EventHandler(this.ShowOrderButton_Click);
+            // 
             // EmployeesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(346, 472);
+            this.ClientSize = new System.Drawing.Size(346, 500);
+            this.Controls.Add(this.ShowOrderButton);
             this.Controls.Add(addressLabel);
             this.Controls.Add(this.addressTextBox);
             this.Controls.Add(birthDateLabel);
@@ -579,5 +591,6 @@
         private System.Windows.Forms.TextBox reportsToTextBox;
         private System.Windows.Forms.TextBox titleTextBox;
         private System.Windows.Forms.TextBox titleOfCourtesyTextBox;
+        private System.Windows.Forms.Button ShowOrderButton;
     }
 }

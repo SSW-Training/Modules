@@ -44,5 +44,19 @@ namespace WindowsUI
         {
             e.NewObject = new Employee();
         }
+
+        private void ShowOrderButton_Click(object sender, EventArgs e)
+        {
+            var employee = employeeBindingSource.Current as Employee;
+            
+            if (employee == null) return;
+
+            var orderForm = new OrdersForm(employee.EmployeeID);
+
+            orderForm.ShowDialog();
+
+            
+
+        }
     }
 }
