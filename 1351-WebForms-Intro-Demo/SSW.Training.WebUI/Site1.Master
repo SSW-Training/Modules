@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SSW.Training.WebUI.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+        <a href="~/" runat="server">Home</a>
+        <a href="~/SinglePageDemo.aspx" runat="server">Single Page</a> | 
+        <a href="~/CodeBehindDemo.aspx" runat="server">Code Behind</a> | 
+        <a href="~/PostbackDemo.aspx"  runat="server">Postback Page</a> | 
+        <a href="~/SessionAndAppStateDemo.aspx" runat="server">Session and App State</a> | 
+        <a href="~/ViewStateDemo.aspx">View State - missing runat=server</a> | 
+    </div>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
