@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Wizard.aspx.cs" Inherits="SSW.Training.WebUI.Wizard" %>
+<%@ Register src="AddressUserControl.ascx" tagname="AddressUserControl" tagprefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
         Head Content Goes Here
 </asp:Content>
@@ -8,7 +9,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
         <asp:Panel ID="CustomerDetailsPanel" Visible="false" runat="server">
             Page 1
-            <table style="width: 100%;" border="1">
+            <table style="width: 100%;">
                 <tr>
                     <td>First Name</td>
                     <td><asp:TextBox ID="FirstNameField" runat="server"></asp:TextBox></td>
@@ -19,11 +20,15 @@
                 </tr>
                 <tr>
                     <td>Billing Address</td>
-                    <td></td>
+                    <td>
+                        <uc1:AddressUserControl ID="AddressUserControl1" runat="server" />
+                    </td>
                 </tr>
                 <tr>
                     <td>Shipping Address</td>
-                    <td></td>
+                    <td>
+                        <uc1:AddressUserControl ID="AddressUserControl2" runat="server" />
+                    </td>
                 </tr>
             </table>
             <asp:Button ID="NextButton" Text="Next >" runat="server" OnClick="NextButton_Click" />
@@ -31,7 +36,7 @@
 
         <asp:Panel ID="PaymentDetailsPanel" Visible="false" runat="server">
             Page 2
-            <table style="width: 100%;" border="1">
+            <table style="width:100%;" >
                 <tr>
                     <td>Name on Credit Card</td>
                     <td><asp:TextBox ID="CardNameField" runat="server"></asp:TextBox></td>
