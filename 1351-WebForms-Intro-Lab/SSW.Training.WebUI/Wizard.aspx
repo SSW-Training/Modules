@@ -39,7 +39,11 @@
             <table style="width:100%;" >
                 <tr>
                     <td>Name on Credit Card</td>
-                    <td><asp:TextBox ID="CardNameField" runat="server"></asp:TextBox></td>
+                    <td><asp:TextBox ID="CardNameField" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                            ControlToValidate="CardNameField" ErrorMessage="Name on Card is Required" 
+                            ForeColor="Red"></asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td>Card Type</td>
@@ -51,7 +55,11 @@
                 </tr>
                 <tr>
                     <td>Card Number</td>
-                    <td><asp:TextBox ID="CardNumberField" runat="server"></asp:TextBox></td>
+                    <td><asp:TextBox ID="CardNumberField" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                            ControlToValidate="CardNumberField" ErrorMessage="Card Number is a Required" 
+                            ForeColor="Red"></asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td>Expiry</td>
