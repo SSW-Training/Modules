@@ -11,6 +11,10 @@
             Page 1
             <table style="width: 100%;">
                 <tr>
+                    <td>Title</td>
+                    <td><asp:TextBox ID="TitleField" runat="server"></asp:TextBox></td>
+                </tr>
+                <tr>
                     <td>First Name</td>
                     <td><asp:TextBox ID="FirstNameField" runat="server"></asp:TextBox></td>
                 </tr>
