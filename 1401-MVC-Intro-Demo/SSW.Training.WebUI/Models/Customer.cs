@@ -12,3 +12,5 @@ namespace SSW.Training.WebUI.Models
         public string DisplayName { get { return string.Format("{0} {1}",FirstName, LastName); } }
     }
 }
+
+

@@ -5,6 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSW.Training.WebUI", "SSW.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSW.Training.WebUI.Tests", "SSW.Training.WebUI.Tests\SSW.Training.WebUI.Tests.csproj", "{56413D0A-E7F0-4A8C-830F-3367CD507343}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ED37C688-2FB9-4723-A04D-9F48741A55FA}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Instructions.docx = Solution Items\Instructions.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
