@@ -63,7 +63,7 @@
     <Content Include="MasterPageFromWebConfigDemo.aspx" />
     <Content Include="PostbackDemo.aspx" />
     <Content Include="SessionAndAppStateDemo.aspx" />
-    <Content Include="SinglePageDemo.aspx" />
+    <Content Include="010-SinglePageDemo.aspx" />
     <Content Include="ViewStateDemo.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="MasterPageDemo.aspx.cs" Inherits="SSW.Training.WebUI.MasterPageDemo" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="070-MasterPageDemo.aspx.cs" Inherits="SSW.Training.WebUI.MasterPageDemo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     Here are the header contents
