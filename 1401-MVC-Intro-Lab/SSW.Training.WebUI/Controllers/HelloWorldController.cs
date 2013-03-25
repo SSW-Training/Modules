@@ -16,7 +16,16 @@ namespace SSW.Training.WebUI.Controllers
         public string Welcome(string target)
         {
             return HttpUtility.HtmlEncode(string.Format("Hello {0} !" ,target));
-        } 
+        }
+
+        public ActionResult Thank(string target)
+        {
+
+            ViewBag.Message = string.Format("Hello {0}!", target);
+            ViewBag.RepeatCount = 5;
+
+            return View();
+        }
     }
 }
 
