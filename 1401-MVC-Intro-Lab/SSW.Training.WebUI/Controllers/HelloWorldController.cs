@@ -20,11 +20,11 @@ namespace SSW.Training.WebUI.Controllers
 
         public ActionResult Thank(string target)
         {
+            var model = new Models.ThankViewModel();
+            model.Message = string.Format("Hello {0}!", target);
+            model.RepeatCount = 5;
 
-            ViewBag.Message = string.Format("Hello {0}!", target);
-            ViewBag.RepeatCount = 5;
-
-            return View();
+            return View(model);
         }
     }
 }
