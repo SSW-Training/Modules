@@ -120,4 +120,19 @@ namespace SSW.Training.WebUI.Tests.Unit
 
     }
 
+
+    //todo: 
+    //Returns() can also be called with multiple arguments to set up a sequence of return values.
+    //    _calculator.Mode.Returns("HEX", "DEC", "BIN");
+    //    Assert.That(_calculator.Mode, Is.EqualTo("HEX"));
+    //    Assert.That(_calculator.Mode, Is.EqualTo("DEC"));
+    //    Assert.That(_calculator.Mode, Is.EqualTo("BIN"));
+
+    //todo: 
+    //Finally, we can raise events on our substitutes (unfortunately C# dramatically restricts the extent to which this syntax can be cleaned up):
+    //    bool eventWasRaised = false;
+    //    _calculator.PoweringUp += () => eventWasRaised = true;
+    //    _calculator.PoweringUp += Raise.Event<Action>();
+    //    Assert.That(eventWasRaised);
+
 }
