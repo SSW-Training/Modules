@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9BD2575E-8DBF-4410-84A1-64085782732A}</ProjectGuid>
+    <ProjectGuid>{92C720A5-027A-40C2-81CC-8B52934589A7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SSW.Training.Tests.Unit</RootNamespace>
-    <AssemblyName>SSW.Training.Tests.Unit</AssemblyName>
+    <RootNamespace>SSW.Training.Business.Tests.Unit</RootNamespace>
+    <AssemblyName>SSW.Training.Business.Tests.Unit</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -56,18 +53,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="01-FragileCode.cs" />
-    <Compile Include="02-ComplexCode.cs" />
-    <Compile Include="03-EmailValidator.cs" />
-    <Compile Include="04ClassInitialise.cs" />
-    <Compile Include="05handlingexceptions.cs" />
-    <Compile Include="CreditCardValidator.cs" />
-    <Compile Include="CustomerMessager.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

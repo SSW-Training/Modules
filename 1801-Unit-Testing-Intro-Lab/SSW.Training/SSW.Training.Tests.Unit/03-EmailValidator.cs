@@ -20,51 +20,50 @@ namespace SSW.Training.Tests.Unit
     }
 
 
-    [TestClass]
-    public class StringValidationTests
+[TestClass]
+public class StringValidationTests
+{
+    [TestMethod]
+    public void IsValidEmailAddress_ForValidEmail_ReturnTrue()
     {
+        //arrange
+        var stringToTest = "adam@stephensen.me";
 
-        [TestMethod]
-        public void IsValidEmailAddress_ForValidEmail_ReturnTrue()
-        {
-            //arrange
-            var stringToTest = "adam@stephensen.me";
+        //act
+        var result = stringToTest.IsValidEmailAdress();
 
-            //act
-            var result = stringToTest.IsValidEmailAdress();
+        //assert
+        Assert.IsTrue(result);
+    }
+    
 
-            //assert
-            Assert.IsTrue(result);
+[TestMethod]
+    public void IsValidEmailAddress_ForInValidEmailContainingSpaces_ReturnFalse()
+    {
+        //arrange
+        var stringToTest = "adam@stephensen .me";
 
-        }
-        [TestMethod]
-        public void IsValidEmailAddress_ForInValidEmailContainingSpaces_ReturnFalse()
-        {
-            //arrange
-            var stringToTest = "adam@stephensen .me";
+        //act
+        var result = stringToTest.IsValidEmailAdress();
 
-            //act
-            var result = stringToTest.IsValidEmailAdress();
-
-            //assert
-            Assert.IsFalse(result);
-
-        }
-        [TestMethod]
-        public void IsValidEmailAddress_ForInValidEmailContainingNoAt_ReturnFalse()
-        {
-            //arrange
-            var stringToTest = "adamstephensen.me";
-
-            //act
-            var result = stringToTest.IsValidEmailAdress();
-
-            //assert
-            Assert.IsFalse(result);
-
-        }
+        //assert
+        Assert.IsFalse(result);
 
     }
+    [TestMethod]
+    public void IsValidEmailAddress_ForInValidEmailContainingNoAt_ReturnFalse()
+    {
+        //arrange
+        var stringToTest = "adamstephensen.me";
+
+        //act
+        var result = stringToTest.IsValidEmailAdress();
+
+        //assert
+        Assert.IsFalse(result);
+
+    }
+}
 
     [TestFixture]
     public class StringValidationTests_Nunit
@@ -95,6 +94,4 @@ namespace SSW.Training.Tests.Unit
             Assert.IsFalse(result);
         }
     }
-
-
 }
