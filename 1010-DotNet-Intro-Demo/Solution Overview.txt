@@ -1,6 +1,5 @@
 
-
-HelloWorld.ConsoleUI is a stand alone demonstration 
+HelloWorld.ConsoleUI is a stand alone demonstration. 
 
 HelloWorld.WindowsUI and HelloWorld.Business go together.
 Rather than use a normal class library. HelloWorld.Business can include unit tests for demonstration purpoases.
