@@ -61,8 +61,8 @@
     <Compile Include="03-EmailValidator.cs" />
     <Compile Include="04ClassInitialise.cs" />
     <Compile Include="05handlingexceptions.cs" />
+    <Compile Include="99 CustomerMessager.cs" />
     <Compile Include="CreditCardValidator.cs" />
-    <Compile Include="CustomerMessager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
